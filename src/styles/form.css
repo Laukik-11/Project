@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap');
+
+:root{
+    --nav-bg:#3efdfd;
+    --nav-bg-hover: white;
+    --nav-text:#111111;
+    --content-bg:#faf5f5;
+}
+.container{
+    font-family: 'Roboto',sans-serif;
+    margin-top: -3px;
+    font-size: 1.4rem;
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  var(--content-bg);
+    border-bottom: 1px solid #DAD7D1;
+}
+
+.form-title{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+form > input{
+    display: block;
+    margin: 13px 0px 18px 0px;
+    font-size: 1.2rem;
+    border: 1px solid #DAD7D1;
+    border-radius: 0.3rem;
+    padding: 10px;
+    width: 31rem;
+}
+form > input[type=submit]{
+    width: 10rem;
+    background-color: #F1E9E9;
+    border: 1px solid #DAD7D1;
+    font-size: 1.4rem;
+    border:none;
+    border-radius: 0.5rem;
+}
+form > input[type=submit]:hover{
+    transition: 500ms;
+    transform: translateY(-3px);
+    -webkit-box-shadow: 2px 10px 22px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 10px 22px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 10px 22px -7px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+
+form > textarea{
+    display: block;
+    margin: 13px 0px 18px 0px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 31rem;
+    border: 1px solid #DAD7D1;
+    border-radius: 0.3rem;
+    height:  7rem;
+    overflow-y:auto;
+}
+.label::after{
+    display: inline;
+    content: "(required)";
+    margin-left: 8px;
+    font-size: 1.1rem;
+    color: #928f8f;
+}
+.error{
+    font-size: 1.1rem;
+    margin:0 0 12px 20px;
+    color: #bf1650;
+}
+.error::before{
+    display: inline;
+    content: "⚠";
+    margin-right: 5px;
+}
+
+@media(max-width:700px){
+    .container{
+        padding-top: 3rem;
+    }
+    .form-title{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+   form > input{
+    margin: 10px 0px 12px 0px;
+    width: 17rem;
+    font-size: 0.8rem;
+   }
+   form > textarea{
+    width: 17rem;
+    font-size: 0.8rem;
+   }
+   .label{
+    font-size: 1.2rem;
+   }
+   .label::after{
+    font-size: 0.8rem;
+   }
+   .error{
+    font-size: 0.8rem;
+    margin:0 0 12px 15px;
+    }
+    form > input[type=submit]{
+        width: 6rem;
+        border: 1px solid #DAD7D1;
+        font-size: 0.9rem;
+    }
+    form > input[type=submit]:hover{
+        transition: 500ms;
+        transform: translateY(-3px);
+        -webkit-box-shadow: 2px 10px 22px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 10px 22px -7px rgba(0,0,0,0.75);
+        box-shadow: 2px 10px 22px -7px rgba(0,0,0,0.75);
+        cursor: pointer;
+    }
+}
