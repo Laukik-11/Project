@@ -1,15 +1,12 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import teamimg from "../assets/person-smartphone-office-table.jpeg"
 
-function ContactBody(){
-    return(
-        <>
-        <img className="contactImg" src={teamimg}
-         alt="" />
-         <ContactForm />
-        </>
-    )
+function ContactBody() {
+  return (
+    <>
+      <ContactForm />
+    </>
+  );
 }
 
-export default ContactBody
+export default ContactBody;

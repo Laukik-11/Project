@@ -1,16 +1,21 @@
 import React from "react";
-import bgimg from "../assets/background.png"
+import bgimg from "../assets/background.png";
 
+export default function Body() {
+  return (
+    <section>
+      <img className="background-img" src={bgimg} alt="background" />
+      <section className="content">
+        <p>
+          Level up your brand with the latest digital marketing trends. I'm a
+          paragraph. Click here to add your own text and edit me. It’s easy.
+          Just click “Edit Text” or double click me to add your own content and
+          make changes to the font. I’m a great place for you to tell a story
+          and let your users know a little more about you.
+        </p>
 
-export default function Body(){
-    return(
-        <section>
-            <img className="background-img"src={bgimg} alt="background" />
-            <section className="content">
-                <p>On February 27th, we're hosting the first edition of the annual Integration Bee 🐝 under the annual mega techno-managerial fest of NIT Jalandhar “TechNITi”. Stay Tuned!</p>
-                <h2>MEET THE TEAM</h2>
-            <section className="team-images"></section>
-        </section>
+        <section className="team-images"></section>
+      </section>
     </section>
-    )
+  );
 }
